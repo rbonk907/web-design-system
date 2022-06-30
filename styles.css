@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&family=Poppins:wght@400;500&family=Source+Code+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 100px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 26px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+section h1,
+section h2 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+section {
+    border: 2px solid gray;
+    margin-top: 20px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.color-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px 20px;
+}
+
+.color-wrapper div {
+    width: 100%;
+    text-align: center;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.blue {
+    background-color: #2d5dcc;
+    color: #fff;
+}
+
+.pink {
+    background-color: #d957d9;
+}
+
+.mint-green {
+    background-color: #4fe0b0;
+}
+
+.beige {
+    background-color: #efd9ca
+}
+
+.font-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 10px 20px;
+}
+
+span.font-title {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+span.source-code-pro {
+    font-family: 'Source Code Pro', monospace;
+    display: block;
+    margin: 20px 0;
+}
+
+span.nunito-sans {
+    font-family: 'Nunito Sans', sans-serif;
+    display: block;
+    margin: 20px 0;
+}
+
+span.poppins {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin: 20px 0;
+}
+
+p.font-bold {
+    font-weight: bold;
+}
+
+p.font-italic {
+    font-style: italic;
+}
+
+.text-styles ul {
+    margin-left: 100px;
+}
+
+.text-styles li {
+    margin: 10px 0;
+}
+
+.text-styles p {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+    main {
+        padding: 0 50px;
+    }
+
+    .color-wrapper {
+        display: block;
+    }
+
+    .color-wrapper div+div {
+        margin-top: 20px;
+    }
+
+    .font-wrapper {
+        display: block;
+    }
+}
